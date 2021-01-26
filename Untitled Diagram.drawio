@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-01-26T07:25:48.734Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" etag="fLspldyOFjT3J-3BH5la" version="14.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-26T07:27:59.571Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" etag="eT-PWR95X9RvFWfT1itW" version="14.2.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="988" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="988" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -94,6 +94,18 @@
         </mxCell>
         <mxCell id="tvDGTtGMjyp61BlsNUUy-15" value="ListAnalysis()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="610" y="740" width="99" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tvDGTtGMjyp61BlsNUUy-22" value="Count Duplicated" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="130" y="670" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tvDGTtGMjyp61BlsNUUy-24" value="Count Duplicated" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="434" y="670" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tvDGTtGMjyp61BlsNUUy-26" value="Don&#39;t Count Duplicated" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="310" y="670" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tvDGTtGMjyp61BlsNUUy-27" value="Don&#39;t Count Duplicated" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="610" y="670" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
