@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T02:29:08.344Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="tRJVh-3B_REGyigWw_nL" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-18T05:49:51.267Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="S8nrhy1ctoegwQkQjFow" version="14.4.6" type="github">
   <diagram id="WxJmrbj4FMavfr03XEdt" name="Page-1">
     <mxGraphModel dx="1186" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -54,11 +54,8 @@
             <mxPoint x="340" y="479.9999999999998" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lIqp50ITP-52UnrY79w9-22" value="&lt;b&gt;A.P.S. = 1.310&lt;/b&gt;&lt;br&gt;(Average Pod Size)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="lIqp50ITP-52UnrY79w9-22" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;A.P.S. = 0.5223&lt;/b&gt;&lt;/div&gt;(Average Pod Size)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="70" y="550" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="lIqp50ITP-52UnrY79w9-23" value="66 Percentile of All Pods With Required CPU &amp;gt; 0.1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="10" y="520" width="300" height="20" as="geometry" />
         </mxCell>
         <mxCell id="lIqp50ITP-52UnrY79w9-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lIqp50ITP-52UnrY79w9-24" target="lIqp50ITP-52UnrY79w9-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -87,7 +84,7 @@
         <mxCell id="lIqp50ITP-52UnrY79w9-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lIqp50ITP-52UnrY79w9-33" target="lIqp50ITP-52UnrY79w9-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lIqp50ITP-52UnrY79w9-33" value="&lt;b&gt;O.A.D&lt;/b&gt;&lt;br&gt;(OverAllocate Distribution)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="lIqp50ITP-52UnrY79w9-33" value="&lt;b&gt;O.A.D&lt;/b&gt;&lt;br&gt;(OverAllocate Distribution)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="220" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="lIqp50ITP-52UnrY79w9-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lIqp50ITP-52UnrY79w9-34" target="lIqp50ITP-52UnrY79w9-52" edge="1">
@@ -107,7 +104,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="lIqp50ITP-52UnrY79w9-39" value="&lt;b&gt;A.O.A&lt;br&gt;&lt;/b&gt;(Average OverAllocate)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="lIqp50ITP-52UnrY79w9-39" value="&lt;b&gt;A.O.A = 0.5222863700850052&lt;/b&gt;&lt;br&gt;(Average OverAllocate)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="1080" y="220" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="lIqp50ITP-52UnrY79w9-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="lIqp50ITP-52UnrY79w9-43" target="lIqp50ITP-52UnrY79w9-34" edge="1">
@@ -187,7 +184,16 @@
           <mxGeometry x="1920" y="410" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nDz4YtGOMV715M5J9GVg-1" value="&lt;b style=&quot;font-size: 21px;&quot;&gt;Test Node:&lt;/b&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 21px; text-align: left;&quot;&gt;tess-node-c2k5l-tess26.stratus.rno.ebay.com&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;" parent="1" vertex="1">
-          <mxGeometry x="960" y="60" width="550" height="20" as="geometry" />
+          <mxGeometry x="955" y="37" width="550" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YkEF_Q2LTufc7rQMarKT-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=21;" edge="1" parent="1" source="YkEF_Q2LTufc7rQMarKT-3" target="lIqp50ITP-52UnrY79w9-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YkEF_Q2LTufc7rQMarKT-3" value="&lt;b&gt;O.A.H&lt;/b&gt;&lt;br&gt;(OverAllocate Histogram)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="840" y="90" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YkEF_Q2LTufc7rQMarKT-6" value="Kernel density estimation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="744" y="260" width="380" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
