@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-31T20:41:26.312Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="HpRaomSze9v5VtXqrScU" version="15.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-31T21:20:03.620Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="I8eZu1MqUQ6tsrWO1w2y" version="15.1.2" type="github">
   <diagram id="7iP_bG4NFCaxwsf9EMQZ" name="Page-1">
     <mxGraphModel dx="865" dy="1645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -107,13 +107,37 @@
           <mxGeometry y="48" width="280" height="52" as="geometry" />
         </mxCell>
         <mxCell id="lYwjI8WXC5cVy-879hYP-49" value="GridTaskWrapper" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1400" y="45" width="360" height="110" as="geometry" />
+          <mxGeometry x="1400" y="55" width="380" height="240" as="geometry" />
         </mxCell>
         <mxCell id="lYwjI8WXC5cVy-879hYP-51" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="lYwjI8WXC5cVy-879hYP-49">
-          <mxGeometry y="26" width="360" height="8" as="geometry" />
+          <mxGeometry y="26" width="380" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="lYwjI8WXC5cVy-879hYP-52" value="+ GridTaskWrapper() &#xa;+ Initialize(GridTaskRequest, Dictionary&lt;string, IMessaging&gt;) &#xa;+ RetrieveCalculator(GridTaskRequest) -&gt; ExecutionEnvironment&#xa;- &lt;virtual&gt; Execute(GridTaskRequest) -&gt; Bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lYwjI8WXC5cVy-879hYP-49">
-          <mxGeometry y="34" width="360" height="76" as="geometry" />
+        <mxCell id="lYwjI8WXC5cVy-879hYP-52" value="+ GridTaskWrapper() &#xa;&#xa;+ Initialize(GridTaskRequest, Dictionary&lt;string, IMessaging&gt;) &#xa;&#xa;+ RetrieveCalculator(GridTaskRequest) -&gt; ExecutionEnvironment&#xa;&#xa;+ MarketDataProvider(GridTaskRequest) -&gt; IMarketDataProvider&#xa;&#xa;+ PersistResult(GridTaskRequest, GenericResultDetails)&#xa;&#xa;+ &lt;virtual&gt; SendTaskComplete(string, long)&#xa;&#xa;+ &lt;virtual&gt; Execute(GridTaskRequest) -&gt; Bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lYwjI8WXC5cVy-879hYP-49">
+          <mxGeometry y="34" width="380" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="lYwjI8WXC5cVy-879hYP-55" value="«interface»&#xa;IMarketDataProvider" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="-215" width="330" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lYwjI8WXC5cVy-879hYP-56" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="lYwjI8WXC5cVy-879hYP-55">
+          <mxGeometry y="40" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lYwjI8WXC5cVy-879hYP-57" value="+ Configure(Object) -&gt; Bool&#xa;+ GetKeyGenerator() &#xa;+ GetData&lt;T&gt;(DateSelectTerm, out long, string, long) -&gt; T&#xa;+ GetData&lt;T&gt;(int, DateTime, DateTime, out long, ...)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lYwjI8WXC5cVy-879hYP-55">
+          <mxGeometry y="48" width="330" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="lYwjI8WXC5cVy-879hYP-58" value="CalculatorWrapper" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1840" y="70" width="720" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="lYwjI8WXC5cVy-879hYP-59" value="- Func&lt;GenericResultDetails&gt; _getGenericResultForExceptionHandling" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lYwjI8WXC5cVy-879hYP-58">
+          <mxGeometry y="26" width="720" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="lYwjI8WXC5cVy-879hYP-60" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="lYwjI8WXC5cVy-879hYP-58">
+          <mxGeometry y="60" width="720" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lYwjI8WXC5cVy-879hYP-61" value="+ Execute(GridTaskRequest) -&gt; Bool&#xa;&#xa;+ SelectCalculator(ExecutionEnviroment) -&gt; Tuple&lt;Func&lt;CalculatorData, GenericResultDetials&gt;, Func&lt;GenericResultDetails&gt;&gt;&#xa;&#xa;+ GetCalculator(ExecutionEnviroment) -&gt; Tuple&lt;Func&lt;CalculatorData, GenericResultDetails&gt;, Func&lt;GenericResultRetails&gt;&gt;&#xa;&#xa;+ BuildData(GenericGridTaskRequest, ITradeGroupComponent, IMarketDataProvider) -&gt; CalculatorData&#xa;&#xa;- RetrieveCacheData&lt;T&gt; (IMarketDataProvider, GenericGridTaskRequest, string, long) -&gt; T&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lYwjI8WXC5cVy-879hYP-58">
+          <mxGeometry y="68" width="720" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="lYwjI8WXC5cVy-879hYP-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.002;entryY=0.376;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lYwjI8WXC5cVy-879hYP-52" target="lYwjI8WXC5cVy-879hYP-61">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
