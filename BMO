@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-02T23:01:49.416Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="AkU1rqxY6gHUeYxgK-fn" version="16.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-02T23:24:47.585Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="msT9QTGtu9lOxmaeX5Ur" version="16.5.2" type="github">
   <diagram id="7iP_bG4NFCaxwsf9EMQZ" name="Page-1">
-    <mxGraphModel dx="1730" dy="1666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2823" dy="2287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -231,14 +231,38 @@
         <mxCell id="BEEf24QWHxtmPDZZ6H57-33" value="Composition" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="500" y="-430" width="120" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="BEEf24QWHxtmPDZZ6H57-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BEEf24QWHxtmPDZZ6H57-52" target="BEEf24QWHxtmPDZZ6H57-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="BEEf24QWHxtmPDZZ6H57-52" value="«interface»&#xa;IGenericCalculatorFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="-590" y="-288" width="760" height="100" as="geometry" />
+          <mxGeometry x="-690" y="-283" width="760" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BEEf24QWHxtmPDZZ6H57-53" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="BEEf24QWHxtmPDZZ6H57-52">
           <mxGeometry y="40" width="760" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="BEEf24QWHxtmPDZZ6H57-54" value="+ GetCalculator(Tuple&lt;String,String,String&gt; aExEnv): Tuple&lt;Func&lt;CalculatorData, GenericResultDetails&gt;, Func&lt;GenericResultDetails&gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="BEEf24QWHxtmPDZZ6H57-52">
-          <mxGeometry y="48" width="760" height="52" as="geometry" />
+        <mxCell id="BEEf24QWHxtmPDZZ6H57-54" value="+ TryGetCalculator(Tuple&lt;String,String,String&gt; aExEnv) : Tuple&lt;Func&lt;CalculatorData, GenericResultDetails&gt;, Func&lt;GenericResultDetails&gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="BEEf24QWHxtmPDZZ6H57-52">
+          <mxGeometry y="48" width="760" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="BEEf24QWHxtmPDZZ6H57-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BEEf24QWHxtmPDZZ6H57-55" target="BEEf24QWHxtmPDZZ6H57-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BEEf24QWHxtmPDZZ6H57-55" value="GenericCalculatorFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-690" y="-155" width="760" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BEEf24QWHxtmPDZZ6H57-56" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="BEEf24QWHxtmPDZZ6H57-55">
+          <mxGeometry y="30" width="760" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="BEEf24QWHxtmPDZZ6H57-57" value="- GetCalculator(Tuple&lt;String,String,String&gt; aExEnv): Tuple&lt;Func&lt;CalculatorData, GenericResultDetails&gt;, Func&lt;GenericResultDetails&gt;&gt;&#xa;+ TryGetCalculator(Tuple&lt;String,String,String&gt; aExEnv) : Tuple&lt;Func&lt;CalculatorData, GenericResultDetails&gt;, Func&lt;GenericResultDetails&gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="BEEf24QWHxtmPDZZ6H57-55">
+          <mxGeometry y="38" width="760" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="BEEf24QWHxtmPDZZ6H57-59" value="TheGenericCalculatorFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-460" y="-15" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BEEf24QWHxtmPDZZ6H57-60" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="BEEf24QWHxtmPDZZ6H57-59">
+          <mxGeometry y="30" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="BEEf24QWHxtmPDZZ6H57-61" value="Singlenton&lt;GenericCalculatorFactory&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="BEEf24QWHxtmPDZZ6H57-59">
+          <mxGeometry y="38" width="300" height="32" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
